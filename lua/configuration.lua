@@ -21,7 +21,7 @@ conf.theme = "tokyonight"
 --   dracula:     blood, magic, soft, default
 --   nightfox:    carbonfox, dawnfox, dayfox, duskfox, nightfox, nordfox, terafox
 --   monokai-pro: classic, octagon, pro, machine, ristretto, spectrum
-conf.theme_style = "moon"
+conf.theme_style = "night"
 -- enable transparency if the theme supports it
 conf.enable_transparent = true
 
@@ -111,8 +111,12 @@ conf.session_manager = "persistence"
 conf.file_tree = "neo-tree"
 -- Replace the UI for messages, cmdline and the popupmenu
 conf.enable_noice = true
--- Enable smart column display
-conf.enable_smartcolumn = true
+-- Enable ChatGPT (set OPENAI_API_KEY environment variable)
+conf.enable_chatgpt = true
+-- Enable Code Explain (requires 3.5GB model, uses GPT4ALL)
+conf.enable_codeexplain = false
+-- Enable the newer rainbow treesitter delimiter highlighting
+conf.enable_rainbow2 = true
 -- Enable 'StartupTime' command
 conf.enable_startuptime = true
 -- Add/change/delete surrounding delimiter pairs with ease
